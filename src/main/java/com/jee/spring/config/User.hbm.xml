@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.gurugubelli.pojo.User" table="user_data">
+  <id name="username">
+   <column name="username" length="20" />
+  </id>
+  <property name="password" column="password" length="20" />
+  <property name="firstName" column="first_name" length="20" />
+  <property name="lastName" column="last_name" length="20" />
+  <property name="dob" column="dob" />
+  <property name="mobileNo" column="mobile_no" length="10" />
+  <property name="emailId" column="email_id" length="25" />
+ </class>
+</hibernate-mapping>
